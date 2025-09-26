@@ -1,0 +1,47 @@
+<html>
+
+<body>
+    <form action="head3.html" method="get" style="background-color: antiquewhite;">
+        <fieldset>
+            <legend align="center">Login Form</legend>
+            <input type="text" name="uname" placeholder="Enter user name" required maxlength="10"
+                minlength="2">&nbsp;name<br />
+            <input type="email" name="eid">&nbsp;email<br />
+            <input type="password" name="pwd">&nbsp;password<br />
+            <input type="number" name="num" min="0" max="100" step="1">&nbsp;number<br />
+            <input type="tel" name="num2">&nbsp;number2<br />
+            <input type="radio" name="r1" value="male">&nbsp;male
+            <input type="radio" name="r1" value="female" checked>&nbsp;female<br />
+            <input type="checkbox" name="c1" value="surat">&nbsp;surat
+            <input type="checkbox" name="c1" value="ahmedabad">&nbsp;Ahmedabad<br />
+            <input type="date" name="dob">birthday<br />
+            <input type="color" name="col">Select_Color<br />
+            <input type="range" min="0" max="200" value="20"><br />
+            <!-- bydefault=min=0 max=100 value=50 -->
+            <input type="search">Searchbar<br />
+            <input type="file" name="fi" accept=".jpg" multiple>Attech_Files<br />
+            <input list="browsers" name="browser">
+            <datalist id="browsers">
+                <option value="chorme">
+                <option value="chormeone">
+                <option value="firefox">
+            </datalist>
+            <!-- list and id same complsury -->
+            <input type="text" name="h1" value="hide" hidden>It is hidden.<br />
+            <input type="text" name="r1" value="ro" readonly>Readonly<br />
+            <input type="text" name="d1" value="da" disabled>Disabled<br />
+
+            <input type="text"><label>username</label><br />
+            <label><input type="text">username1</label><br />
+
+            <textarea rows="10" cols="20">address</textarea><br />
+            <!-- for multiple text -->
+
+            <input type="text" autofocus>name<br />
+            <input type="submit">
+            <input type="reset">
+        </fieldset>
+    </form>
+</body>
+
+</html>
