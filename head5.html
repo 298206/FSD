@@ -1,0 +1,48 @@
+<html>
+
+<body>
+    <select>
+        <option>Pyhton</option>
+        <option>FSD</option>
+        <option selected>DE</option>
+        <!-- for intial select -->
+        <option>PS</option>
+    </select><br />
+    <select>
+        <option selected hidden disabled>--Select City--</option>
+        <optgroup label="Gujarat">
+            <option>Ahmedabad</option>
+            <option>Gandhinagar</option>
+        </optgroup>
+        <optgroup label="Maharashtra">
+            <option>Mumbai</option>
+            <option>Pune</option>
+        </optgroup>
+    </select>
+<br />
+<br />
+
+    <form method="get">
+        <fieldset>
+            <legend>User Details Form</legend>
+            Username:&nbsp;<input type="text" name="uname" required><br /><br/>
+            Password:&nbsp;<input type="password" name="pwd"><br /><br />
+            Address:&nbsp;<input type="text" name="addr"><br /><br />
+            Choose of Books:<br />
+            <input type="radio" name="r1" value="Novel">&nbsp;Novel<br />
+            <input type="radio" name="r1" value="StroyBook">&nbsp;storybook<br />
+            <input type="radio" name="r1" value="comics">&nbsp;comics<br />
+            <br />
+            Favourite Author:
+            <select>
+                <option selected hidden disabled>Novelists</option>
+            </select><br /><br/>
+            Comments for the last book you read:<br />
+            <textarea rows="4" cols="50"></textarea><br /><br/>
+            <input type="submit">
+            <input type="reset">
+        </fieldset>
+    </form>
+</body>
+
+</html>
