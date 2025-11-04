@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-line {
+            color: blue;
+            font-weight: bold;
+        }
+
+        h1::first-letter {
+            color: green;
+            text-decoration: underline;
+        }
+
+        li::marker {
+            color: red
+        }
+
+        p::before {
+            content: "Note: ";
+            color: greenyellow;
+        }
+
+        h1::after {
+            content: "💝";
+
+        }
+
+        p::selection {
+            background-color: green;
+            color: purple;
+        }
+
+        /*selected on paragraph only  */
+
+        ::selection {
+            background-color: green;
+            color: purple;
+        }
+
+        /* selected on whole page */
+    </style>
+</head>
+
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt numquam laudantium, aliquam ea omnis provident
+        amet sint consectetur recusandae accusamus repellat saepe aliquid blanditiis praesentium exercitationem id sit
+        ipsum commodi!</p>
+    <h1>Good afternoon</h1>
+    <br>
+    <br>
+    <ul>
+        <li>abc</li>
+        <li>pqr</li>
+    </ul>
+</body>
+
+</html>

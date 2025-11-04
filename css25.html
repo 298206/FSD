@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link {
+            color: red;
+        }
+
+        a:visited {
+            color: green;
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        a:active {
+            color: brown;
+        }
+
+        ul li:nth-child(2) {
+            color: blueviolet;
+        }
+
+        ul li:not(.a) {
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.google.com" target="_blank">visited google</a>
+    <ul>
+        <li>abc</li>
+        <li class="a">pqr</li>
+        <li>xyz</li>
+    </ul>
+</body>
+
+</html>

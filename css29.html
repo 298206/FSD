@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            border: 2px solid navy;
+            padding: 10px;
+            margin: 5px;
+            background-color: crimson;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-evenly;
+            align-items: stretch;
+            flex-wrap: nowrap;
+            gap: 15px;
+        }
+
+        .inner {
+            background-color: green;
+            color: wheat;
+            padding: 20px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="inner" style="order:2">Box1</div>
+        <div class="inner">Box2</div>
+        <div class="inner" style="order:1">Box3</div>
+        <div class="inner">Box4</div>
+        <div class="inner">Box5</div>
+        <div class="inner">Box6</div>
+        <div class="inner">Box7</div>
+
+    </div>
+
+</body>
+
+</html>
