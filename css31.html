@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            margin-top: 50px;
+            height: 800px;
+            border: 1px solid red;
+            position: relative;
+        }
+
+        .text {
+            border: 1px solid blue;
+            height: 100px;
+            width: 100px;
+            margin-bottom: 30px;
+            margin-left: 20px;
+        }
+
+        .text1 {
+            background-color: aqua;
+            position: static;
+            left: 100px;
+            /* no change in position bcz position is static */
+        }
+
+        .text2 {
+            background-color: blueviolet;
+            position: relative;
+            top: 10px;
+            left: 300px;
+            /* position is change to 10 px to top*/
+        }
+
+        .text3 {
+            background-color: greenyellow;
+            position: absolute;
+            top: 200px;
+            left: 500px;
+            right: 1000px;
+            z-index: -1;
+        }
+
+        .text4 {
+            background-color: crimson;
+            position: fixed;
+            top: 200px;
+            left: 500px;
+            right: 1000px;
+            left: 500px;
+        }
+
+        .text5 {
+            background-color: darkcyan;
+            position: sticky;
+            bottom: 0px;
+            left: 400px;
+            top: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="height: 1000px; border: 1px solid green;"></div>
+
+    <div class="container">
+        <div class="text text1">static</div>
+        <div class="text text2">relative</div>
+        <div class="text text3">absolute</div>
+        <div class="text text4">fixed</div>
+        <div class="text text5">sticky</div>
+
+    </div>
+    <div style="height: 1000px; border: 1px solid green;"></div>
+
+</body>
+
+</html>
