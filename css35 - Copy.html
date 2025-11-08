@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            transition-property: background-color, width;
+            /* by default=all */
+            transition-duration: 5s, 3s;
+            /* comlusary in exam */
+            transition-timing-function: ease;
+            transition-delay: 10s;
+        }
+
+        div:hover {
+            height: 300px;
+            width: 300px;
+            background-color: green;
+            align-items: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <img src="image.jpg">
+    </div>
+</body>
+
+</html>
+<!-- 
+Linear: Moves at a constant speed throughout the transition.
+ease
+Ease: Starts slow, speeds up in the middle, slows down at the end.
+ease-in
+Ease-in: Starts slow and accelerates towards the end.
+ease-out
+Ease-out: Starts fast and slows down at the end.
+ease-in-out
+Ease-in-out: Starts slow, speeds up in the middle, and slows down at the end. -->

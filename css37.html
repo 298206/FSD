@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: ease;
+        }
+
+        .div:focus {
+            background-color: red;
+        }
+
+        .a:focus {
+            height: 100px;
+            width: 300px;
+            background-color: blue;
+        }
+
+        .b:hover {
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <input type="usename" class="div">Username<br>
+        <input type="password" class="a">password<br><br>
+        <input type="button" value="sumbit" class="b">
+    </form>
+</body>
+
+</html>
