@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --b: blue
+        }
+
+        /* 
+        p {
+            color: var(--b)
+        }
+
+        h1 {
+            color: var(--b)
+        } */
+
+        p {
+            --c: yellow;
+            color: var(--c)
+        }
+
+        h1 {
+            color: var(--c)
+        }
+
+        p:hover {
+            background-color: var(--c);
+            color: black;
+        }
+
+        p {
+            --b: green;
+            color: var(--b);
+        }
+
+        /* first priority local and after global */
+    </style>
+</head>
+
+<body>
+    <p>paraaa</p>
+    <h1>heading</h1>
+</body>
+
+</html>
